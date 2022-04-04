@@ -3,9 +3,9 @@ import java.util.Date;
 
 public class Album implements Serializable {
 
-    private Integer id;
+    private int id;
     private String artist;
-    private String name;
+    private String albumName;
     private Date releaseDate;
     private Long sales;
     private String genre;
@@ -30,11 +30,11 @@ public class Album implements Serializable {
     }
 
     public String getName() {
-        return name;
+        return albumName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.albumName = name;
     }
 
     public Date getReleaseDate() {
