@@ -15,26 +15,32 @@ public class Ad implements Serializable {
     }
 
     public String getAdName() {
+
         return adName;
     }
 
     public void setAdName(String adName) {
+
         this.adName = adName;
     }
 
     public double getAdPrice() {
+
         return adPrice;
     }
 
-    public void setAdPrice(Long adPrice) {
+    public void setAdPrice(double adPrice) {
+
         this.adPrice = adPrice;
     }
 
     public String getAdLocation() {
+
         return adLocation;
     }
 
     public void setAdLocation(String adLocation) {
+
         this.adLocation = adLocation;
     }
 }

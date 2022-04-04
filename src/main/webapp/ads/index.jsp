@@ -5,20 +5,21 @@
   Time: 1:58 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Ads</title>
 </head>
 <body>
-<form action="/ads/" method="POST">
-    <label for="name">Name</label>
-    <input name="name" id="name" type="text">
-    <br>
-    <label for="price">Price</label>
-    <input name="price" id="price" type="text">
-    <br/>
-    <input type="submit">
-</form>
+<h1>Here are all the Ads:</h1>
+
+<c:forEach var="ad" items="${ads}">
+    <div class="ad">
+        <h2>${ad.adName}</h2>
+        <p>Price: $ ${ad.adPrice}</p>
+        <p>Location: ${ad.adLocation}</p>
+    </div>
+</c:forEach>
 </body>
 </html>
