@@ -12,14 +12,14 @@
     <title>Ads</title>
 </head>
 <body>
-<h1>Here are all the Ads:</h1>
+    <h1>Here are all the Ads:</h1>
 
-<c:forEach var="ad" items="${ads}">
-    <div class="ad">
+    <c:forEach var="ad" items="${ads}">
+        <div class="ad">
         <h2>${ad.adName}</h2>
         <p>Price: $ ${ad.adPrice}</p>
         <p>Location: ${ad.adLocation}</p>
     </div>
-</c:forEach>
+    </c:forEach>
 </body>
 </html>
