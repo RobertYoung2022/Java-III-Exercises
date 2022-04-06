@@ -1,15 +1,15 @@
 public class LanguageDao {
-    private static  productsDao;
-    // field for the DAO we created
-
-
-    public static Products getProductsDao() {
-        if(productsDao == null) {
-            productsDao = new ListProductsDao();
-        }
-        // make a new data access object if one not found [null]
-
-        return productsDao;
-        // return the one you found or the one you created on line 6 :D
-    }
+//    private static  productsDao;
+//    // field for the DAO we created
+//
+//
+//    public static Products getProductsDao() {
+//        if(productsDao == null) {
+//            productsDao = new ListProductsDao();
+//        }
+//        // make a new data access object if one not found [null]
+//
+//        return productsDao;
+//        // return the one you found or the one you created on line 6 :D
+//    }
 }
