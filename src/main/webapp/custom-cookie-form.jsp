@@ -12,19 +12,33 @@
 </head>
 <body>
 <div>
-    <h1>Cookies Practice</h1>
+    <h2>Pick Your Language:</h2>
 <%--    action is the servlet name--%>
-    <form action="/cookies-personalize-response.jsp" method="POST">
-        <label for="language">Choose your favorite programming language:</label>
 
-        <select name="language" id="language">
-            <option value="html">HTML5</option>
-            <option value="css">CSS3</option>
-            <option value="javascript">Javascript</option>
-            <option value="java">Java</option>
-        </select>
-        <input type="submit" value="Submit">
-    </form>
-</div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="language" value="java" checked>
+            Java
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="language" value="html">
+            HTML
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="language" value="css">
+            CSS
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="language" value="javascript">
+            Javascript
+        </label>
+    </div>
+    <button type="submit">Submit</button>
 </body>
 </html>

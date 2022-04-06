@@ -9,10 +9,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>${language} Language Check</title>
+    <jsp:include page="partials/head.jsp">
+        <jsp:param name="title" value="Cookies" />
+    </jsp:include>
 </head>
 <body>
-<h1>Training Portal</h1>
+<h1>${language} Language Check</h1>
 <div>
     <h3>New Books for ${language}</h3>
     <ul>
