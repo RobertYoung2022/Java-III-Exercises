@@ -1,4 +1,7 @@
-//public class LanguageDao {
+
+
+public class LanguageDao {
+
 //    private static  productsDao;
 //    // field for the DAO we created
 //
@@ -12,4 +15,7 @@
 //        return productsDao;
 //        // return the one you found or the one you created on line 6 :D
 //    }
+
 //}
+}
+
